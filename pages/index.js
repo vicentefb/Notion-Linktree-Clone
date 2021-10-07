@@ -27,6 +27,10 @@ export default function Home({ title, image, links }) {
 // When we deplooy the application it will fetch the new list
 // We will use ISR Incremental Static Regeneration
 // We will get image, title and links
+/*
+By using notion page as the data source, 
+I can leverage the features that notion app provides, such as: adding, removing and updating content, and even re-ordering the links. 
+*/
 export const getStaticProps = async () => {
   // Getting notion instance
   const notion = new Client({

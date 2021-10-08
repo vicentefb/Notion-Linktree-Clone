@@ -62,6 +62,6 @@ export const getStaticProps = async () => {
 
   return {
     props: { title, image, links },
-    revalidate: 10,
+    revalidate: 7,
   };
 };
